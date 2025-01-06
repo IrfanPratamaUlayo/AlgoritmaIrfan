@@ -1,0 +1,185 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOoZq8BEDbGLUTsWbv3ND77",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/IrfanPratamaUlayo/AlgoritmaIrfan/blob/main/P8%20Irfan%20pratama%20Ulayo\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iukLSD9Q8BoQ",
+        "outputId": "50990be7-0326-4c3e-e9a1-6808a0433708"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan integer untuk mengalikan elemen array: 2\n",
+            "Setelah elemen dikalikan: [8, 2, -2, 20, 0, 24]\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Membuat array dengan elemen integer\n",
+        "array = [4, 1, -1, 10, 0, 12]\n",
+        "\n",
+        "# Menerima masukan dari pengguna\n",
+        "multiplier = int(input(\"Masukkan integer untuk mengalikan elemen array: \"))\n",
+        "\n",
+        "# Mengalikan semua elemen array dengan multiplier\n",
+        "for i in range(len(array)):\n",
+        "    array[i] *= multiplier\n",
+        "\n",
+        "# Mencetak hasil array setelah dikalikan\n",
+        "print(\"Setelah elemen dikalikan:\", array)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program untuk mencari nilai terbesar dalam array T\n",
+        "\n",
+        "# Inisialisasi array T\n",
+        "n = int(input(\"Masukkan jumlah elemen array (n): \"))\n",
+        "T = [30]\n",
+        "\n",
+        "# Memasukkan elemen ke dalam array T\n",
+        "print(\"Masukkan elemen array T:\")\n",
+        "for i in range(n):\n",
+        "    elemen = int(input(f\"Elemen ke-{i+1}: \"))\n",
+        "    T.append(elemen)\n",
+        "\n",
+        "# Menentukan nilai terbesar\n",
+        "nilai_terbesar = max(T)\n",
+        "\n",
+        "# Menampilkan nilai terbesar\n",
+        "print(\"Nilai terbesar dari elemen array T adalah:\"), nilai_terbesar"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "y_FceQ3iIAkT",
+        "outputId": "0fdd1a14-e502-44b9-f1ed-bd9ad3ff1155"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan jumlah elemen array (n): 10\n",
+            "Masukkan elemen array T:\n",
+            "Elemen ke-1: 9\n",
+            "Elemen ke-2: 12\n",
+            "Elemen ke-3: 30\n",
+            "Elemen ke-4: -1\n",
+            "Elemen ke-5: 0\n",
+            "Elemen ke-6: 4\n",
+            "Elemen ke-7: -1\n",
+            "Elemen ke-8: 3\n",
+            "Elemen ke-9: 30\n",
+            "Elemen ke-10: 14\n",
+            "Nilai terbesar dari elemen array T adalah:\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(None, 30)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program untuk mencari nilai terbesar dalam array T\n",
+        "\n",
+        "# Inisialisasi array T\n",
+        "n = int(input(\"Masukkan jumlah elemen array (n): \"))\n",
+        "T = [90]\n",
+        "\n",
+        "# Memasukkan elemen ke dalam array T\n",
+        "print(\"Masukkan elemen array T:\")\n",
+        "for i in range(n):\n",
+        "    elemen = int(input(f\"Elemen ke-{i+1}: \"))\n",
+        "    T.append(elemen)\n",
+        "\n",
+        "# Menentukan nilai terbesar\n",
+        "nilai_terbesar = max(T)\n",
+        "\n",
+        "# Menampilkan nilai terbesar\n",
+        "print(\"Nilai terbesar dari elemen array T adalah:\"), nilai_terbesar"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1WHD56NeKj_f",
+        "outputId": "03a03555-7d7a-4f27-9e48-28cf8553f83a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan jumlah elemen array (n): 8\n",
+            "Masukkan elemen array T:\n",
+            "Elemen ke-1: 1\n",
+            "Elemen ke-2: 3\n",
+            "Elemen ke-3: 5\n",
+            "Elemen ke-4: 8\n",
+            "Elemen ke-5: -12\n",
+            "Elemen ke-6: 90\n",
+            "Elemen ke-7: 3\n",
+            "Elemen ke-8: 5\n",
+            "Nilai terbesar dari elemen array T adalah:\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(None, 90)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    }
+  ]
+}
